@@ -1,0 +1,4 @@
+CREATE TABLE password_manager_duplicate( id BIGINT(11) AUTO_INCREMENT NOT NULL, url VARCHAR(128) NOT NULL, username VARCHAR(32) NOT NULL, password VARCHAR(32) NOT NULL, PRIMARY KEY(id) );
+INSERT INTO password_manager (url, username, password) VALUES ("https://chat.openai.com/c/a5d3a640-d9ed-489b-89f1-f34b1b0e7933", "chatgpt", "gpt123");
+SELECT * FROM `password_manager`;
+DROP TABLE password_manager_duplicate;

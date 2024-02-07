@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style0.css">
+</head>
+<body>
+    <div class="element">
+        <button class="bttn_element">SAVE DATA</button>
+        <button class="bttn_element">VIEW DATA</button>
+    </div>
+    <script>
+        var obj = document.getElementsByClassName('bttn_element');
+        obj[0].addEventListener('click', () => {
+            window.location.href = 'include/save.php';
+        });
+        obj[1].addEventListener('click', () =>{
+            window.location.href = "include/view.php";
+            console.log("Clicked");
+        });
+    </script>
+</body>
+</html>

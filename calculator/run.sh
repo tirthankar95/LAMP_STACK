@@ -1,0 +1,1 @@
+cp -rf * /mnt/d/xampp/htdocs/
