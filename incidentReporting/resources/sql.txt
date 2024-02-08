@@ -1,0 +1,12 @@
+CREATE TABLE report_db(
+	id BIGINT AUTO_INCREMENT NOT NULL,
+    name VARCHAR(32) NOT NULL,
+    category VARCHAR(32) NOT NULL, 
+    created_on DATETIME DEFAULT CURRENT_TIME,
+    report TEXT NOT NULL,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO report_db (name, category, report) VALUES (:name, :category, :report);
+
+SELECT name, category, created_on, report FROM report_db WHERE category="malicious software" ORDER BY created_on DESC;

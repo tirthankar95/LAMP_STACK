@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(../resources/background_image.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.element_inner{
+    margin: 1vh;
+}
+#bttn{
+    border-radius: 16px;
+    border: 4px;
+    border-style: dashed;   
+    border-color: rgb(1, 1, 45);
+    color: rgb(1, 1, 45);
+}
+#bttn:hover{
+    background-color: rgb(1, 1, 45);
+    color: aqua;
+    border-color: aqua;
+}
+#searchQuery{
+    margin-bottom: 10vh;
+}
+.msg{
+    margin-top: 32px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+.err-msg{
+    margin-top: 32px;
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.block{
+    width: 150vh;
+    height: 20vh;
+    background-color: azure;
+    border-color: aqua;
+    border: 1px;
+    border-style: dashed;
+    margin-top: 5vh;
+    overflow: auto;
+    font-size: medium;
+}
+.block:hover{
+    background-color: rgb(1, 1, 45);
+    color: aqua;
+    border-color: aqua;
+}
